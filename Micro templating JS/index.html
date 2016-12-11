@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/template.js"></script>
+
+</head>
+<body>
+	
+	<script type="text/html" id="test">
+	<% for (var i = 0; i< data.length; i++) { %>
+	<h1><%= data[i].title %></h1>
+	<p><%= data[i].content %></p>
+
+<% } %>
+	</script>
+</body>
+</html>
